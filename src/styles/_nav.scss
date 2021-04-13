@@ -1,0 +1,60 @@
+.light-mode {
+  nav {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button {
+      cursor: pointer;
+      border-radius: 8%;
+      background: white;
+      border: none;
+      border: 2px solid rgb(65, 65, 65);
+      padding: 0.5rem;
+      transition: all 0.5s ease;
+      &:hover {
+        background: rgb(65, 65, 65);
+        color: white;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+      button {
+        z-index: 10;
+      }
+    }
+  }
+}
+
+.dark-mode {
+  nav {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button {
+      cursor: pointer;
+      border-radius: 8%;
+      background: #2c2f33;
+      border: none;
+      border: 2px solid rgb(224, 224, 224);
+      padding: 0.5rem;
+      transition: all 0.5s ease;
+      color: rgb(224, 224, 224);
+      &:hover {
+        background: rgb(224, 224, 224);
+        color: #2c2f33;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+      button {
+        z-index: 10;
+      }
+    }
+  }
+}
